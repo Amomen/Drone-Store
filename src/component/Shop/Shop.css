@@ -2,9 +2,19 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  margin: 20px;
 }
 .shop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+}
+.cart-container {
+  background-color: aliceblue;
+  padding: 20px;
+}
+@media screen and (maxwidth: 800px) {
+  .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
