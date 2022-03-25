@@ -1,0 +1,14 @@
+.header{
+    background-color:slategray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header a{
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+.header a:hover {
+    color: orange
+}
