@@ -5,6 +5,7 @@ import Cart from "../Cart/Cart";
 import Carts from "../Carts/Carts";
 import Product from "./Product/Product";
 import "./Shop.css";
+import QnA from "../QnA/QnA";
 
 const Shop = () => {
   const [products, setProduct] = useState([]);
@@ -40,6 +41,7 @@ const Shop = () => {
       <div className="cart-container">
         <Cart cart={cart} remove={remove}></Cart>
       </div>
+      <QnA></QnA>
     </div>
   );
 };

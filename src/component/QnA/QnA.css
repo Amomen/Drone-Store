@@ -1,0 +1,13 @@
+.ReactQna{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    padding: 10px 20px;
+}
+.react-work{
+    width: 100%;
+    margin: 20px;
+}
+.state-work{
+    width: 100%;
+    margin: 20px;
+}

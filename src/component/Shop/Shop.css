@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 20px;
+  padding: 0 10%;
 }
 .shop {
   display: grid;
@@ -32,9 +33,14 @@
   border-radius: 20px;
   background-color: rgb(108, 112, 102);
 }
-@media screen and (maxwidth: 800px) {
+@media (max-width: 768px) {
   .product-container {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
+  }
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
