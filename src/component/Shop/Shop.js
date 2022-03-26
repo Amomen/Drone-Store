@@ -8,27 +8,37 @@ import "./Shop.css";
 
 const Shop = () => {
   const [products, setProduct] = useState([]);
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("generated.json")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
+  const [cart, setCart] = useState([]);
+
+  const remove=()=>{
+    let updatedCart=[];
+    setCart(updatedCart);
+  }
   const getCart = (product) => {
-    const allProduct = [...cart, product];
-    setCart(allProduct);
+    const exist = cart.find((added) => added.id === product.id);
+    if(!exist){
+      const allProducts=[...cart,product];
+      setCart(allProducts);
+    }
+    else return;
+    
   };
   return (
     <div className="product-container">
       <div className="shop">
         {products.map((product) => (
-          <Product key={product.id} product={product} cart={getCart}></Product>
+          <Product key={product.id} product={product} cart={getCart} ></Product>
         ))}
       </div>
 
       <div className="cart-container">
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart} remove={remove}></Cart>
       </div>
     </div>
   );

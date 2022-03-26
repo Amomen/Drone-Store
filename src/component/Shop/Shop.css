@@ -9,10 +9,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
-.cart-container {
-  top: 0;
-  padding: 30px 20px;
+.cart-container {  
   position: sticky;
+  top: 0;
   background-color: aliceblue;
   
 }
@@ -36,5 +35,6 @@
 @media screen and (maxwidth: 800px) {
   .product-container {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0;
   }
 }

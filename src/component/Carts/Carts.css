@@ -1,0 +1,13 @@
+.cart-box{
+position: sticky;
+top: 0;
+}
+.flex-cart{
+    display: flex;
+    align-items: center;
+}
+.cart-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}

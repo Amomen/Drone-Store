@@ -1,7 +1,4 @@
-.cart{
-    
-}
-.cart-container{
+.sticky-cart{
     position: sticky;
     top: 0;
 }
